@@ -26,7 +26,7 @@ Por ejemplo:
 gaitober" => "gato"
 ~~~
 
-**[Pruebalo aquí](https://github.com/vargas-luis/cifrador)**
+**[Pruebalo aquí](https://vargas-luis.github.io/cifrador/)**
 
 Hecho por Luis Vargas para programa Oracle Next Education(ONE) y AluraLATAM
 <piloto@duck.com>
