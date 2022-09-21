@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+<title>Cifrador</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilo.css">
+<script src="script.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+</style>
+</head>
+
+
+<body>
+
+<!-- Logo -->
+<div class="header">
+  <div id = "logo"><img src="imagenes\logo.svg" alt="alura"></div>
+</div>
+
+<!-- El cuerpo principal -->
+<div class="row"> 
+  
+  <div class="main">
+    <form>
+      <!-- <textarea class="mensaje" id="mensaje" rows="10" cols="40" onclick = cleanBox(id)>Ingrese el texto aquí</textarea> -->
+      <textarea class="mensaje" id="mensaje" rows="8" cols="30" onclick = cleanBox(id) type="text" 
+      onkeypress="return (event.charCode == 32 || event.charCode == 241 || (event.charCode >= 97 && event.charCode <= 122))"/
+      placeholder="Ingrese el texto aquí"></textarea>
+    </form>
+
+    <br>
+
+    <div class = "warning"><img src="imagenes\exclamation.svg" alt="warning">  
+    Solo letras minúsculas y sin acentos</div>
+    <br>
+
+    <!-- BOTONES -->
+    <div class="botones">
+      <button class="botonEncriptar" id="encripta" onclick=cypher(1)>Encriptar</button>
+      <img src="imagenes\sepador.png" style="width:48px; height: 1px;">
+      <button class="botonDesencriptar" id="desencripta" onclick=cypher(0)>Desencriptar</button>
+    </div>
+
+  </div>
+  <!-- Fin de main -->
+
+  
+  <!-- Barra lateral [oculta] -->
+  <div class="frame" id="frame">
+    <div class="doll" id="doll">
+      <img src="imagenes\doll.png" alt="doll">
+      <h4>Ingresa el texto que desees encriptar o desencriptar</h4>
+    </div>
+    
+    <div class="areaCifrado" id="areaCifrado">
+      <form>
+        <!-- <textarea name="mensajeCifrado" id="mensajeCifrado" cols="40" rows="5" placeholder="Ningun mensaje fue encontrado"></textarea> -->
+        <textarea class="mensajeCifrado" id="mensajeCifrado" rows="14" cols="28" type="text" 
+        placeholder="Ningun mensaje fue encontrado"></textarea>
+      </form>
+        <button class="botonCopiar" id="botonCopiar" onclick=copiarTexto()>Copiar Texto</button>
+    </div>
+    
+  </div>
+  <!-- Fin de barra lateral -->
+
+</div> 
+<!-- Fin del cuerpo principal -->
+
+</body>
+</html>
+<!-- FIN -->

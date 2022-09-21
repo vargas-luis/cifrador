@@ -1,8 +1,6 @@
-function franky(){
-    alert("It's alive");    }
-
 function cleanBox(identificador) {  
     document.getElementById(identificador).value = "";
+    ocultarImagenes(2);
 }
 
 
@@ -23,29 +21,25 @@ function cypher(cypher) {
         }
     }
 
-    document.getElementById('mensajeCifrado').value = clave(secreto);
+    document.getElementById('mensaje-encriptado').value = clave(secreto);
 }
 
 function copiarTexto() {
-
-    var content = document.getElementById('mensajeCifrado');
+    var content = document.getElementById('mensaje-encriptado');
     content.select();
     document.execCommand('copy');
-    // ocultarImagenes(2);
-    // alert("Texto Copiado");
-    
 }
 
 function ocultarImagenes(ocultar) {
 
     if (ocultar == 1) {
-        document.getElementById('areaCifrado').style.visibility="visible";
-        document.getElementById('doll').style.display="none";
+        document.getElementById('caja-doll').style.display="none";
+        document.getElementById('caja-encriptado').style.display="contents";
     }
 
     if (ocultar == 2) {
-        document.getElementById('areaCifrado').style.visibility="hidden";
-        document.getElementById('doll').style.display="contents";
+        document.getElementById('caja-doll').style.display="contents";
+        document.getElementById('caja-encriptado').style.display="none";
     }
 }
 
