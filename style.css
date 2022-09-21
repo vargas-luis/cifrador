@@ -1,0 +1,167 @@
+*{
+    background: #E9ECF8;
+}
+
+#logo{
+    width: 96px;
+    margin-top: 1rem;
+    display: block;
+}
+
+main{
+    width: 940px;
+
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
+    color:#052051;
+}
+
+section{
+    margin-top: 1.5rem;
+    position: relative;
+    display: inline-block;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.caja-uno{
+    width: 60%;
+    height: 600px;
+    margin-left: 2%;
+    vertical-align: top;
+    font-size: smaller;
+}
+
+.caja-dos{
+    width: 33%;
+    height: 600px;
+    margin-left: 2%;
+    background-color: #FFFFFF;
+    border: 10px double gold;
+    border-radius: 30px;
+}
+
+span{
+    display: block;
+    text-align: left;
+    margin: 5%;
+    margin-bottom: 5px;
+}
+
+#exclamation{
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#caja-doll{
+    display: none;
+    text-align: center;
+}
+
+#caja-encriptado{
+    display: contents;
+}
+
+#mensaje{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    height: 75%;
+    margin: 5% auto;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-size: 2rem;
+    color:#052051;
+}
+
+#mensaje-encriptado{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    height: 81%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-size: 1.25rem;
+    color:#052051;
+}
+
+#elmono{
+    width: 305px;
+    margin: 20% auto;
+    background-color: #FFFFFF;
+}
+
+#caja-doll h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+#caja-doll h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+}
+
+button{
+    width: 225px;
+    height: 40px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 5px;
+    font-size: 1rem;
+    color:#052051;
+}
+
+#encriptar{
+    background: #052051;
+    color: #e9ecf8;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer{
+    width: 940px;
+    margin: auto;
+}
+
+.pie{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #E9ECF8;
+}
+
+.pie:hover{
+    transform: scale(1.5);
+    transition-duration: 1s;
+    color: #052051;
+}
+
+#git-logo{
+    margin: 5px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+ 
+
+@media screen and (max-width: 991px) {
+    main, .caja-uno, .caja-dos{
+        width: 90%;
+        height: 50%;
+    }
+}
+ 
+@media screen and (max-width: 767px) {
+}
+ 
+@media screen and (max-width: 479px) {
+}

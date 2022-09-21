@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style_reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Cifrador</title>
+</head>
+
+<body>
+    <!-- /////////////////////////////////////////////////////////  HEADER -->
+    <header>
+    </header>
+    
+    <!-- /////////////////////////////////////////////////////////  MAIN -->
+    <main>
+        <img src="./img/logo.svg" alt="Alura" id="logo">
+        <section class="caja-uno">
+            <textarea id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <span><img src="./img/exclamation.svg" id="exclamation">Solo letras minúsculas y sin acentos</span>
+            <button id="encriptar">Encriptar</button>
+            <button id="desencriptar">Desencriptar</button>
+        </section>
+
+        <section class="caja-dos">
+            <div id="caja-doll">
+                <img src="./img/doll.svg" alt="Muñeco" id="elmono">                
+                <h2>Ningún mensaje fue encontrado</h2>
+                <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+            </div>
+
+            <div id="caja-encriptado">
+                <textarea id="mensaje-encriptado" cols="30" rows="10"></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <!-- /////////////////////////////////////////////////////////  FOOTER -->
+    <footer>
+        <div class="pie">
+            &COPY; Luis <a href="https://github.com/vargas-luis/cifrador"><img src="./img/git.png" alt="GitHub" id="git-logo"></a> Vargas
+        </div>
+    </footer>
+</body>
+</html>

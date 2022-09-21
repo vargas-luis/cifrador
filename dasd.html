@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+
+    <script src="ahorcado.js"></script>
+    <link rel="stylesheet" href="style_reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <img src="./img/logo.svg" alt="logo_alura" id="logo">
+    </header>
+    
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="opciones">
+                <button class="boton" id="newGame" onclick="newGame()">Nuevo Juego</a></button>
+                <button class="boton" id="newWord" onclick="newWord()">Nueva Palabra</a></button>
+            </div>
+        </section>
+
+        <section class="thegame" id="thegame">
+            <div class="patibulo">
+                <canvas width="600" height="400" id="patibulo"></canvas>
+            </div>
+            <form class="palabraAdivinar">
+                <input type="text" id="underlines">
+                <!-- <input type="text" id="guessletter" onkeydown="verificar(event)"> -->
+                <input type="text" id="guessletter" onkeypress="verificar(event)">
+                <p>LETRAS REPETIDAS:</p>
+                <input type="text" id="repetidas">
+            </form>
+    
+            <div class="opciones" id="inicio">
+                <button class="boton" id="guardary" onclick="palabraAzar()">Nueva Palabra</a></button>
+                <button class="boton" id="cancelar" onclick="resetear()">Rendirse</a></button>
+            </div>
+
+            
+        </section>
+
+        <section class="nuevaPalabra" id="nuevaPalabra">
+                <!-- <input type="text" placeholder="Ingrese una palabra" id="caja-nuevaPalabra"> -->
+                <input type="text" placeholder="Ingrese una palabra" id="caja-nuevaPalabra" onkeypress="return(event.charCode == 32 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 122))">
+                
+                <div class="opciones" id="inicio">
+                    <button class="boton" id="guardary" onclick="nuevaPalabra()">Guardar y empezar</button>
+                    <button class="boton" id="cancelar" onclick="resetear()">Cancelar</button>
+                </div>
+        </section>
+
+    </main>    
+
+    <footer>
+        <div class="pie" id="pie">
+            <a href="https://github.com/vargas-luis/ahorcado-alura"><img src="./img/github/git.png" alt="GitHub"></a>
+            <p>Luis Vargas&copy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
