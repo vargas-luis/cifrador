@@ -28,7 +28,9 @@ Ejemplo:
 
 **[Pruebalo aquí](https://vargas-luis.github.io/cifrador/)**
 
-Hecho por Luis Vargas para programa Oracle Next Education(ONE) y AluraLATAM
 
-<piloto@duck.com>
+----
+Desarrollado por Luis Vargas para programa Oracle Next Education(ONE) y AluraLATAM
+
+<piloto@duck.com>   
 Septiembre 2022
