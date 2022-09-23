@@ -21,10 +21,12 @@ function cypher(cypher) {
             veris=1;
         });
     }
+
+    secreto=secreto.toLowerCase();
     
     if(veris){alert("UN NUMERO NO ES UNA LETRA")}
     else{
-        secreto=secreto.toLowerCase();
+        
         const clave = (mensaje) => {
         const originaAlfa = ["a","e","i","o","u"];
         const cifradoAlfa = ["ai","enter","imes","ober","ufat"];
