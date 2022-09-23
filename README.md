@@ -11,7 +11,7 @@
 - La letra "o" es convertida para "ober"
 - La letra "u" es convertida para "ufat"
 
-Funciona solo con letras minúsculas, no permite insertar letras mayúsculas, con acentos o caracteres especiales, anda inténtalo :)
+En la versión para escritorio no acepta mayúsculas, caracteres especiales ó números, en la versión para celular acepta mayúsculas pero las devuelve como minúsculas, los números siguen siendo inválidos.
 
 #### Funciones
 
@@ -20,14 +20,15 @@ Funciona solo con letras minúsculas, no permite insertar letras mayúsculas, co
 - Un botón copia el texto encriptado/desencriptado, y queda almacenado en memoria para ser usado donde se requiera.
 - Diseño responsivo
 
-Por ejemplo:
+Ejemplo:
 ~~~
-"gato" => "gaitober"
-gaitober" => "gato"
+        "gato" => "gaitober"
+        gaitober" => "gato"
 ~~~
 
 **[Pruebalo aquí](https://vargas-luis.github.io/cifrador/)**
 
 Hecho por Luis Vargas para programa Oracle Next Education(ONE) y AluraLATAM
+
 <piloto@duck.com>
 Septiembre 2022

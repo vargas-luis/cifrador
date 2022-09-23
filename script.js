@@ -5,10 +5,27 @@ function cleanBox(identificador) {
 
 
 function cypher(cypher) {
+    
     var secreto = document.getElementById('mensaje').value;
-   
 
-    const clave = (mensaje) => {
+    const regex = /\d/g;
+    let m;
+    let veris;
+
+    while ((m = regex.exec(secreto)) !== null) {
+        if (m.index === regex.lastIndex) {
+            regex.lastIndex++;
+        }
+        
+        m.forEach((match, groupIndex) => {
+            veris=1;
+        });
+    }
+    
+    if(veris){alert("UN NUMERO NO ES UNA LETRA")}
+    else{
+        secreto=secreto.toLowerCase();
+        const clave = (mensaje) => {
         const originaAlfa = ["a","e","i","o","u"];
         const cifradoAlfa = ["ai","enter","imes","ober","ufat"];
         if (cypher){
@@ -22,6 +39,7 @@ function cypher(cypher) {
     }
 
     document.getElementById('mensaje-encriptado').value = clave(secreto);
+    }
 }
 
 function copiarTexto() {

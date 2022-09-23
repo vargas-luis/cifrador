@@ -21,8 +21,9 @@
     <main>
         <img src="./img/logo.svg" alt="Alura" id="logo">
         <section class="caja-uno">
-            <textarea id="mensaje" cols="30" rows="10" onclick = cleanBox(id) type="text" 
-            onkeypress="return (event.charCode == 32 || event.charCode == 241 || (event.charCode >= 97 && event.charCode <= 122))"/ placeholder="Ingrese el texto aqui"></textarea>
+            <textarea id="mensaje" cols="30" rows="10" onclick = cleanBox(id) type="text" placeholder="Ingrese el texto aqui"></textarea>
+            <!-- <textarea id="mensaje" cols="30" rows="10" onclick = cleanBox(id) type="text" 
+            onkeypress="return (event.charCode == 32 || event.charCode == 241 || (event.charCode >= 97 && event.charCode <= 122))"/ placeholder="Ingrese el texto aqui"></textarea> -->
             <span><img src="./img/exclamation.svg" id="exclamation">Solo letras minúsculas y sin acentos</span>
             <button id="encriptar" onclick=cypher(1)>Encriptar</button>
             <button id="desencriptar" onclick=cypher(0)>Desencriptar</button>
